@@ -1,0 +1,21 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Control Panel\Desktop]
+"AutoEndTasks"="1"           ; Finalizar automáticamente las tareas que no responden
+"HungAppTimeout"="1000"      ; Tiempo máximo (en milisegundos) que Windows espera antes de considerar una aplicación como "colgada"
+"MenuShowDelay"="10"         ; Retardo (en milisegundos) para mostrar los menús contextuales
+"WaitToKillAppTimeout"="2000"; Tiempo máximo (en milisegundos) que Windows espera antes de forzar el cierre de las aplicaciones al apagar o reiniciar
+"LowLevelHooksTimeout"="1000"; Tiempo máximo (en milisegundos) que Windows espera para que los hooks de nivel bajo (como los hooks de teclado) procesen eventos antes de que el sistema los ignore
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control]
+"WaitToKillServiceTimeout"="2000"; Tiempo máximo (en milisegundos) que Windows espera antes de forzar el cierre de los servicios al apagar o reiniciar
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer]
+"Max Cached Icons"="4096"   ; Número máximo de iconos en caché para mejorar la velocidad de visualización de los iconos en el Explorador de Windows
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"ExtendedUIHoverTime"=dword:00000005 ; Tiempo de espera (en milisegundos) para mostrar información sobre herramientas extendida en milisegundos (5 ms)
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
+"DisablePagingExecutive"=dword:00000001 ; Evita que Windows guarde el kernel en el archivo de paginación para mejorar el rendimiento del sistema
+"LargeSystemCache"=dword:00000001 ; Permite que Windows use más memoria para caché de archivos y programas para mejorar el rendimiento del sistema
